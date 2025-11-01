@@ -1,4 +1,3 @@
-// FIX: Add missing import for React to resolve type errors.
 import React from 'react';
 
 export enum ProfileType {
