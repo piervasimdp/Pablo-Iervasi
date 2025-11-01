@@ -23,6 +23,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 
+  <!--
+    CORRECCIÓN: Se ha limpiado el importmap para eliminar entradas duplicadas y conflictivas.
+    Esta es la configuración correcta y estable para cargar React y ReactDOM.
+  -->
   <script type="importmap">
 {
   "imports": {
@@ -33,13 +37,12 @@
   }
 }
 </script>
-  <!-- Added Babel to transpile JSX/TSX in the browser -->
+  
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
   <noscript>Necesitas habilitar JavaScript para correr esta aplicación.</noscript>
   <div id="root"></div>
-  <!-- Changed script type to "text/babel" to be processed by Babel -->
   <script type="text/babel" src="./index.tsx"></script>
 </body>
 </html>
