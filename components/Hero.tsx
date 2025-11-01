@@ -1,28 +1,20 @@
-
 import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="inicio" className="relative bg-002f4b text-f4f9fb min-h-[60vh] md:min-h-screen flex items-center">
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-20" 
-        style={{ backgroundImage: "url('https://picsum.photos/1600/900?grayscale&blur=2&random=1')" }}
-      ></div>
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <h1 className="text-4xl md:text-6xl font-bold font-['Montserrat',_sans-serif] mb-4 text-shadow-lg leading-tight">
-          Encontrá tu rumbo.
+    <section className="bg-blue-600 text-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+          Descubrí tu vocación.
         </h1>
-        <p className="text-xl md:text-2xl mb-8 text-66c7d9">
-          Elegir tu futuro también es una aventura.
+        <p className="text-lg sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">
+          Encontrá la carrera que te apasione con nuestro test de orientación vocacional gratuito.
         </p>
-        <p className="max-w-3xl mx-auto mb-10 text-lg">
-          El Observatorio de Orientación Vocacional 2025 es una plataforma gratuita diseñada para ayudarte a explorar tus pasiones y habilidades, conectándote con las mejores oportunidades educativas en Mar del Plata.
-        </p>
-        <a 
+        <a
           href="#test-vocacional"
-          className="bg-00a0b0 hover:bg-66c7d9 text-white font-bold py-4 px-8 rounded-full text-lg transition-transform duration-300 hover:scale-110 inline-block"
+          className="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-all text-lg"
         >
-          Descubrí tu vocación
+          Comenzar Test
         </a>
       </div>
     </section>
